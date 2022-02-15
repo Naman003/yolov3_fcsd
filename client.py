@@ -1,8 +1,8 @@
 from email.mime import image
 import socket
 client = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-client.connect(('localhost',1000))
-
+client.connect(('172.20.10.9',1000))
+print("Successful")
 file = open('traffic_2.webp','rb')
 image_data = file.read(2048)
 
